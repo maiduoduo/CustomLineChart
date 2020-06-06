@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:linchart="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_marginTop="50dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp">
+            <!--<TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="#ECF1F5"/>
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:background="#ECF1F5"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="top"
+                android:background="#ECF1F5"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="#ECF1F5"/>-->
+            <com.aotuman.linechart.LineChartView
+                android:id="@+id/lineChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#ffffff"
+                linchart:lineColor="#12EBDE"
+                linchart:dividerCount="10"
+                linchart:xInterval="140dp"
+                linchart:leftInterval="40dp"
+                linchart:bottomInterval="40dp"
+                linchart:topInterval="10dp"
+                linchart:yAxisFontSize="14sp"/>
+        </FrameLayout>
+    </HorizontalScrollView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="updateToggle"
+        android:text="更新"/>
+
+
+
+
+
+</LinearLayout>
